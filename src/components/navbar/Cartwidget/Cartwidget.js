@@ -1,14 +1,14 @@
-import cart from './assets/cart.svg'
+// import cart from './assets/cart.svg'
 
-const Cartwidget = () => {
+// const Cartwidget = () => {
 
-    return(
-        <div>
-            <img src={cart} alt="cart-widget"/>
+//     return(
+//         <div>
+//             <img src={cart} alt="cart-widget"/>
             
 
-        </div>
-    )
-}
+//         </div>
+//     )
+// }
 
-export default Cartwidget
+// export default Cartwidget
