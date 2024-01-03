@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <nav>
 
-            <h3>mitennis</h3>
+            <h3 style = { {color: 'green'} }>mi tennis</h3>
             <h4>La tienda numero 1</h4>
             <div>
                 <button>Raquetas</button>
