@@ -1,8 +1,9 @@
 import React from "react";
 import '../components/styles/BarNotice.css';
 
-const BarNotice = ( { children } ) => {
+const BarNotice = ( { children, descuento } ) => {
     
+    console.log(descuento)
     
 
     return (
