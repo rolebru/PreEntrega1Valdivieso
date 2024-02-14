@@ -2,7 +2,9 @@
 import Navbar from './components/navbar/navbar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import BarNotice from './components/BarNotice';
-import ItemsCount from './components/ItemsCount';
+import ItemDetail from './components/ItemDetail/ItemDetail';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+
 
 function App() {
 
@@ -10,9 +12,16 @@ function App() {
     <main>
       <section>
     <div className="App">
+      <BrowserRouter>
       <Navbar />
+      <Routes>
+        <Route path= '/' element={<ItemListContainer/>}  />
+        <Route path='/category/:categoryId' element={<ItemListContainer/>} />
+        <Route path='/item/:itemId' element={<ItemDetailContainer/>} />
+        <Route path='*' element={<h1>404 NOT FOUND</h1>} />
+      </Routes>
+      </BrowserRouter>
       <ItemListContainer greeting={'Bienvenidos'} />
-      <ItemsCount initial={1} stock={20} onAdd={(quantity) => console.log('Cantidad agregada ', quantity)}/>
       <BarNotice>
         <p>hast 6 cuotas sin interes</p>
       </BarNotice>
